@@ -1,24 +1,15 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-} from "react-router-dom";
-import Navbar from "./components/Navbar";
+import { Route, Routes } from "react-router-dom";
+import Homepage from "./Homepage";
 
 const App = () => {
   return (
-    <Router>
-      <Navbar />
-
-      {/* for creating a router */}
-      {/* <Routes>
-        <Route path="/" element={<Navigate to="/home" />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes> */}
-    </Router>
+    <div className="bg-gray-200 h-screen">
+      <Routes>
+      <Route path="/" element={<Homepage/>} />
+      </Routes>
+   
+    </div>
   );
 };
 
