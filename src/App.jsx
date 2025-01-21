@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Homepage from "./Homepage";
 import TypeingTest from "./projects/typing-speed-checker/layout"
+import Stopwatch from "./projects/stopwatch/layout";
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
       <Routes>
       <Route path="/" element={<Homepage/>} />
       <Route path="/1" element={<TypeingTest/>} />
+      <Route path="/2" element={<Stopwatch/>} />
       </Routes>
    
     </div>
