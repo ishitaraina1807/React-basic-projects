@@ -61,7 +61,6 @@ const TypingSpeedTest = () => {
         return correctStrokes;
     };
 
-    // Calculate Accuracy
     const accuracy = ((calcCorrectStrokes() / testingParagraph.length) * 100).toFixed(2);
 
     return (
